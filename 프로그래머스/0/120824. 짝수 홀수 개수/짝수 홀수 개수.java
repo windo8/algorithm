@@ -1,0 +1,18 @@
+class Solution {
+    public int[] solution(int[] num_list) {
+        int[] answer = {0, 0};
+        int even = 0;
+        int odd = 0;
+        for(int i : num_list) {
+            if(i % 2 == 0) {
+                even++;
+            } else {
+                odd++;
+            }
+        }
+        answer[0] = even;
+        answer[1] = odd;
+        
+        return answer;
+    }
+}
